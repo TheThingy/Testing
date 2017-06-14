@@ -8,4 +8,4 @@ if value >= 1:
             lowlist.append(x)
     print(lowlist)
 else:
-    print("number too low")
+    print("number cannot be lower than 1")
