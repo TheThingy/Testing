@@ -1,0 +1,8 @@
+while True:
+    number = int(input("Enter number: "))
+    divided = float(number / 2)
+
+    if divided == round(divided):
+        print("even")
+    else:
+        print("odd")
