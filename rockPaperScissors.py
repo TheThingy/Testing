@@ -3,7 +3,7 @@ while True:
     player1 = str(input("Player 1, enter rock, paper or scissor: "))
     player2 = str(input("Player 2, enter rock, paper or scissor: "))
 
-    if player1 or player2 == not in choices:
+    if player1 or player2 == "rock" or "paper" or "scissor":
         if player1 == player2:
             print("It's a draw")
         elif player1 == "rock":
@@ -24,5 +24,5 @@ while True:
             else:
                 print("Player 1 wins")
 
-    else:
-        print("Please choose either rock, paper or scissor")
+
+
