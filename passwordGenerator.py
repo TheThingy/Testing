@@ -12,16 +12,17 @@ def passwordGen():
     digitLength = int(input("Input desired digit length:\n"))
     specialLength = int(input("Input desired special character length:\n"))
     password = ""
-    for i in range(digitLength):
-        password += choice(digits)
+
     for i in range(charLength):
         password += choice(letters)
+    for i in range(digitLength):
+        password += choice(digits)
     for i in range(specialLength):
         password += choice(special)
 
     for i in range(len(password)):
         finalPassword += choice(password)
 
-    return print(finalPassword)
+    return finalPassword
 
-passwordGen()
+print(passwordGen())
